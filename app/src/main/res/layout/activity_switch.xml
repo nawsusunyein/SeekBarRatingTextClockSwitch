@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SwitchActivity">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:orientation="vertical"
+    >
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="50dp"
+        android:checked="true"
+        android:text="Switch One"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:padding="20dp"
+        android:textOn="ON"
+        android:textOff="OFF"
+        />
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Switch Two"
+        android:padding="20dp"
+        android:textOn="ON"
+        android:textOff="OFF"
+        />
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET"
+        android:layout_marginLeft="70dp"
+        />
+</LinearLayout>
