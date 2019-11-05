@@ -17,8 +17,6 @@ public class SeekBarActivity extends AppCompatActivity {
         SeekBar seekbar = (SeekBar) findViewById(R.id.seekbar);
         final TextView txtSeekView = (TextView) findViewById(R.id.seekbarTextview);
         final int progress = seekbar.getProgress();
-       // txtSeekView.setText(progress);
-        //txtSeekView.setText(seekbar.getProgress());
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int pval = 0;
 
