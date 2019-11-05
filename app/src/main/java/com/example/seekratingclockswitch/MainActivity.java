@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         Intent textClockIntent = new Intent(MainActivity.this,TextClockActivity.class);
         startActivity(textClockIntent);
     }
+
+    public void goToAlertDialogActivity(View view){
+        Intent alertDialogIntent = new Intent(MainActivity.this,AlertDialogActivity.class);
+        startActivity(alertDialogIntent);
+    }
 }
